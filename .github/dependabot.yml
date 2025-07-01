@@ -12,8 +12,8 @@ updates:
   - package-ecosystem: "cargo"
     directories:
       - "/backend"
-      - "/healthz"
       - "/"
+      # - "/healthz"
     patterns:
       - "*"
     multi-ecosystem-group: "all-deps"
