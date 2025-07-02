@@ -9,11 +9,16 @@ multi-ecosystem-groups:
     schedule:
       interval: daily
 updates:
+  - package-ecosystem: "docker"
+    directory: "/"
+    patterns:
+      - "*"
+    multi-ecosystem-group: "all-deps"
   - package-ecosystem: "cargo"
     directories:
       - "/backend"
       - "/"
-      # - "/healthz"
+      - "/healthz"
     patterns:
       - "*"
     multi-ecosystem-group: "all-deps"
@@ -24,11 +29,6 @@ updates:
       - "*"
     multi-ecosystem-group: "all-deps"
   - package-ecosystem: "github-actions"
-    directory: "/"
-    patterns:
-      - "*"
-    multi-ecosystem-group: "all-deps"
-  - package-ecosystem: "docker"
     directory: "/"
     patterns:
       - "*"
