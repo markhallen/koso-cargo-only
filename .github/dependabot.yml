@@ -20,7 +20,7 @@ updates:
     directories:
       - "/backend"
       - "/"
-      - "/healthz"
+      # - "/healthz"
     patterns:
       - "*"
     multi-ecosystem-group: "all-deps"
