@@ -7,7 +7,7 @@ version: 2
 multi-ecosystem-groups:
   all-deps:
     schedule:
-      interval: daily
+      interval: weekly
 
 updates:
   - package-ecosystem: "docker"
