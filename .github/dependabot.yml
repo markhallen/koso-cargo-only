@@ -12,3 +12,7 @@ updates:
       - "/healthz"
     schedule:
       interval: "daily"
+    groups:
+      all-deps:
+        patterns:
+          - "*"
